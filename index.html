@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TECHNE</title>
+  <link rel="icon" type="image/png" href="TE logo 1.PNG"/>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <!--Stylesheets-->
+     <style>
+        *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hero-bg.png");
+  position: relative;
+}
+
+.popup{
+    background-color: #fefefe;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+a{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+h2{color: blue;}
+     </style>
+     </head>
+
+
+
+
+<body>
+    <section id="hero">
+    <div class="popup">
+        <button id="close">&times;</button>
+        <h2 style="color: blue; font-size: large;"><B>INSTRUCTIONS</B></h2>
+        <p>
+            <ol>
+                <li>Questions are given via web ,there will be 3 rounds. </li>
+                <li>You need to complete the questions within the time limit,time limit will be shown via web.</li>
+                <li>you can solve the questions with python,java,c and c++.</li>
+                <li>compilers will be provided with questions.</li>
+                <li>you will be disqualified if we found any malpractices.</li>
+                <li style="color: red;">please don't try to refresh the pages</li>
+            </ol>
+        </p>
+        <a href="home.html">Let's Go</a>
+    </div>
+</section>
+ 
+    <!--Script-->
+
+
+
+
+
+    <script>
+    window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            speed: 600,
+            document.querySelector(".popup").style.display = "block";
+        },
+        600
+       
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
+
+     <!-- refresh prevent -->
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
